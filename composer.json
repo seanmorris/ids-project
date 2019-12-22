@@ -11,5 +11,8 @@
     ],
     "require": {
         "seanmorris/ids": "dev-master"
-    }
+    },
+    "require-dev": {
+		"simpletest/simpletest": "dev-master"
+	}
 }
