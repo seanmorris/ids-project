@@ -4,7 +4,6 @@
 SHELL    = /bin/bash
 PROJECT  ?=project
 REPO     ?=repository
-MAKEDIR  =$(dir $(abspath $(firstword $(MAKEFILE_LIST))))
 
 -include .env
 -include .env.${TARGET}
