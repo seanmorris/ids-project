@@ -18,7 +18,7 @@ services:
       service: server
 
   database:
-    ports: ['${IDS_EXPOSE_SQL}:${IDS_DATABASES_MAIN_PORT}']
+    ports: ['${IDS_EXPOSE_SQL:-0}:${IDS_DATABASES_MAIN_PORT:-3306}']
     volumes: ["../../:/app", "/tmp:/tmp"]
     extends:
       file: base.yml
